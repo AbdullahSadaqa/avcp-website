@@ -1,0 +1,539 @@
+
+/* AVCP Product Catalogue */
+
+.catalogue-hero {
+    background: linear-gradient(135deg, #07346d, #0c58a8);
+    color: white;
+    padding: 85px 0;
+    text-align: center;
+}
+
+.catalogue-hero .section-label {
+    color: #b8d8ff;
+}
+
+.catalogue-hero h1 {
+    font-size: clamp(36px, 5vw, 54px);
+    margin: 15px 0;
+    color: white;
+}
+
+.catalogue-hero p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #e4efff;
+    line-height: 1.8;
+}
+
+.catalogue-section {
+    background: #f5f8fc;
+    min-height: 500px;
+}
+
+.catalogue-controls {
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+
+#productSearch {
+    width: 100%;
+    padding: 17px 22px;
+    border: 1px solid #dce5f0;
+    border-radius: 12px;
+    background: white;
+    font: inherit;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#productSearch:focus {
+    border-color: #1764bb;
+    box-shadow: 0 0 0 4px rgba(23, 100, 187, 0.1);
+}
+
+.category-filters {
+     display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 14px;
+
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
+
+.filter-btn {
+    padding: 12px 19px;
+    border: 1px solid #dce5f0;
+    border-radius: 30px;
+    background: white;
+    color: #244364;
+    font: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.filter-btn:hover {
+    border-color: #1764bb;
+    color: #1764bb;
+}
+
+.filter-btn.active {
+    background: #0b4d98;
+    border-color: #0b4d98;
+    color: white;
+}
+
+.catalogue-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 26px;
+}
+
+.catalogue-card {
+    background: white;
+    border: 1px solid #e7edf5;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 24px rgba(10, 45, 90, 0.05);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.catalogue-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(10, 45, 90, 0.12);
+}
+
+.catalogue-card-image {
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #e7f1ff, #f5f9ff);
+    color: #0b4d98;
+    font-size: 65px;
+}
+
+.catalogue-card-content {
+    padding: 25px;
+}
+
+.catalogue-card-content h2 {
+    font-size: 21px;
+    color: #12375e;
+    margin: 0 0 12px;
+}
+
+.catalogue-card-content p {
+    color: #6b7c90;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.catalogue-card[hidden],
+.no-results[hidden] {
+    display: none !important;
+}
+
+.no-results {
+    text-align: center;
+    color: #60758e;
+    padding: 40px 15px;
+    font-size: 17px;
+}
+
+@media (max-width: 900px) {
+    .catalogue-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .catalogue-hero {
+        padding: 60px 0;
+    }
+
+    .catalogue-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .category-filters {
+        gap: 8px;
+    }
+
+    .filter-btn {
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+
+    .catalogue-card-image {
+        height: 160px;
+    }
+}
+
+/* =====================================================
+   AVCP PRODUCT CATALOGUE - LUXURY V2
+   Editorial Pharmaceutical Style
+===================================================== */
+
+/* الصفحة */
+
+.catalogue-section {
+    background: #f2f5f7;
+    padding-top: 85px;
+    padding-bottom: 110px;
+}
+
+
+/* الشبكة */
+
+.catalogue-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+}
+
+
+/* =====================================================
+   PRODUCT CARD
+===================================================== */
+
+.real-product-card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(7, 35, 55, 0.09);
+    border-radius: 4px;
+
+    box-shadow:
+        0 12px 35px rgba(3, 26, 43, 0.055);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
+}
+
+
+/* خط فاخر أعلى البطاقة */
+
+.real-product-card::before {
+    content: "";
+
+    position: absolute;
+
+    z-index: 5;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 3px;
+
+    background: #0b4f91;
+
+    transform: scaleX(0);
+
+    transform-origin: left;
+
+    transition: transform 0.35s ease;
+}
+
+
+html[dir="rtl"] .real-product-card::before {
+    transform-origin: right;
+}
+
+
+.real-product-card:hover {
+    transform: translateY(-9px);
+
+    border-color: rgba(11, 79, 145, 0.22);
+
+    box-shadow:
+        0 30px 65px rgba(3, 26, 43, 0.14);
+}
+
+
+.real-product-card:hover::before {
+    transform: scaleX(1);
+}
+
+
+/* =====================================================
+   PRODUCT IMAGE
+===================================================== */
+
+.real-product-image {
+    position: relative;
+
+    height: 390px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 38px 30px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            180deg,
+            #fbfcfd 0%,
+            #eef3f6 100%
+        );
+}
+
+
+/* خلفية زخرفية ناعمة */
+
+.real-product-image::before {
+    content: "";
+
+    position: absolute;
+
+    width: 240px;
+    height: 240px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(11, 79, 145, 0.045);
+
+    transition:
+        transform 0.45s ease,
+        background 0.45s ease;
+}
+
+
+.real-product-card:hover
+.real-product-image::before {
+    transform: scale(1.18);
+
+    background:
+        rgba(11, 79, 145, 0.075);
+}
+
+
+.real-product-image img {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+
+    filter:
+        drop-shadow(
+            0 15px 13px
+            rgba(3, 26, 43, 0.12)
+        );
+
+    transition:
+        transform 0.5s ease,
+        filter 0.5s ease;
+}
+
+
+.real-product-card:hover
+.real-product-image img {
+    transform: scale(1.06);
+
+    filter:
+        drop-shadow(
+            0 22px 18px
+            rgba(3, 26, 43, 0.17)
+        );
+}
+
+
+/* =====================================================
+   PRODUCT INFORMATION
+===================================================== */
+
+.real-product-info {
+    position: relative;
+
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 28px 28px 30px;
+
+    background: #ffffff;
+
+    border-top:
+        1px solid #e4eaee;
+}
+
+
+/* الفئة */
+
+.real-product-category {
+    display: block;
+
+    margin-bottom: 11px;
+
+    color: #51738c;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 0.17em;
+
+    text-transform: uppercase;
+}
+
+
+/* اسم المنتج */
+
+.real-product-info h2 {
+    margin: 0 0 25px;
+
+    color: #09283e;
+
+    font-size: 25px;
+    font-weight: 600;
+
+    line-height: 1.25;
+
+    letter-spacing: -0.02em;
+}
+
+
+html[dir="rtl"] .real-product-info h2 {
+    letter-spacing: 0;
+}
+
+
+/* =====================================================
+   VIEW DETAILS BUTTON
+===================================================== */
+
+.product-details-btn {
+    width: 100%;
+
+    min-height: 47px;
+
+    margin-top: auto;
+
+    padding: 12px 18px;
+
+    border: 1px solid #09283e;
+    border-radius: 2px;
+
+    background: #09283e;
+
+    color: #ffffff;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.product-details-btn:hover {
+    background: #0b5ca8;
+
+    border-color: #0b5ca8;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   RTL
+===================================================== */
+
+html[dir="rtl"] .real-product-info {
+    text-align: right;
+}
+
+html[dir="rtl"] .real-product-category {
+    letter-spacing: 0;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .catalogue-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 24px;
+    }
+
+
+    .real-product-image {
+        height: 360px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 620px) {
+
+    .catalogue-section {
+        padding-top: 60px;
+        padding-bottom: 75px;
+    }
+
+
+    .catalogue-grid {
+        grid-template-columns: 1fr;
+
+        gap: 22px;
+    }
+
+
+    .real-product-image {
+        height: 360px;
+
+        padding: 30px 24px;
+    }
+
+
+    .real-product-info {
+        padding: 24px;
+    }
+
+
+    .real-product-info h2 {
+        font-size: 23px;
+    }
+
+}

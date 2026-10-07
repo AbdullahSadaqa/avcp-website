@@ -1,0 +1,2141 @@
+/* ======================================================
+
+   AVCP DEPARTMENTS - LUXURY V3
+
+====================================================== */
+
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+
+
+
+/* ======================================================
+
+   HERO
+
+====================================================== */
+
+
+
+.departments-luxury-hero {
+
+    position: relative;
+
+
+
+    min-height: 590px;
+
+
+
+    display: flex;
+
+    align-items: center;
+
+
+
+    overflow: hidden;
+
+
+
+    background: #031522;
+
+}
+
+
+
+.departments-hero-bg {
+
+    position: absolute;
+
+    inset: 0;
+
+}
+
+
+
+.departments-hero-bg img {
+
+    width: 100%;
+
+    height: 100%;
+
+
+
+    display: block;
+
+
+
+    object-fit: cover;
+
+    object-position: center;
+
+
+
+    transform: scale(1.02);
+
+}
+
+
+
+.departments-hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            rgba(2, 18, 30, 0.97) 0%,
+
+            rgba(3, 27, 45, 0.89) 48%,
+
+            rgba(3, 27, 45, 0.45) 100%
+
+        );
+
+}
+
+
+
+html[dir="rtl"] .departments-hero-overlay {
+
+    background:
+
+        linear-gradient(
+
+            270deg,
+
+            rgba(2, 18, 30, 0.97) 0%,
+
+            rgba(3, 27, 45, 0.89) 48%,
+
+            rgba(3, 27, 45, 0.45) 100%
+
+        );
+
+}
+
+
+
+.departments-hero-inner {
+
+    position: relative;
+
+    z-index: 2;
+
+
+
+    width: 100%;
+
+
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+
+
+    gap: 60px;
+
+
+
+    padding-top: 80px;
+
+    padding-bottom: 80px;
+
+}
+
+
+
+.departments-hero-copy {
+
+    max-width: 820px;
+
+}
+
+
+
+.departments-eyebrow {
+
+    display: flex;
+
+    align-items: center;
+
+
+
+    gap: 13px;
+
+
+
+    margin-bottom: 25px;
+
+}
+
+
+
+.departments-eyebrow > span {
+
+    width: 48px;
+
+    height: 1px;
+
+
+
+    background: #72a5c8;
+
+}
+
+
+
+.departments-eyebrow strong {
+
+    color: #bfd2de;
+
+
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+
+
+    letter-spacing: 0.18em;
+
+}
+
+
+
+.departments-hero-copy h1 {
+
+    margin: 0 0 25px;
+
+
+
+    max-width: 900px;
+
+
+
+    color: white;
+
+
+
+    font-size: clamp(48px, 6vw, 76px);
+
+
+
+    font-weight: 500;
+
+
+
+    line-height: 1.06;
+
+
+
+    letter-spacing: -0.045em;
+
+}
+
+
+
+html[dir="rtl"] .departments-hero-copy h1 {
+
+    line-height: 1.25;
+
+    letter-spacing: 0;
+
+}
+
+
+
+.departments-hero-copy p {
+
+    max-width: 690px;
+
+
+
+    margin: 0;
+
+
+
+    color: #cfdee7;
+
+
+
+    font-size: 16px;
+
+
+
+    line-height: 1.9;
+
+}
+
+
+
+.hero-department-count {
+
+    width: 185px;
+
+
+
+    flex-shrink: 0;
+
+
+
+    padding-inline-start: 23px;
+
+
+
+    border-inline-start:
+
+        1px solid rgba(255, 255, 255, 0.25);
+
+}
+
+
+
+.hero-department-count > span {
+
+    display: block;
+
+
+
+    color: white;
+
+
+
+    font-size: 47px;
+
+
+
+    line-height: 1;
+
+
+
+    font-weight: 500;
+
+}
+
+
+
+.hero-department-count small {
+
+    display: block;
+
+
+
+    margin-top: 11px;
+
+
+
+    color: #a7bdca;
+
+
+
+    font-size: 11px;
+
+
+
+    line-height: 1.7;
+
+}
+
+
+
+
+
+/* ======================================================
+
+   DEPARTMENT INDEX
+
+====================================================== */
+
+
+
+.department-index {
+
+    background: #031522;
+
+
+
+    padding-bottom: 65px;
+
+}
+
+
+
+.department-index-grid {
+
+    display: grid;
+
+
+
+    grid-template-columns:
+
+        repeat(2, minmax(0, 1fr));
+
+
+
+    gap: 1px;
+
+
+
+    background: rgba(255, 255, 255, 0.12);
+
+}
+
+
+
+.department-index-card {
+
+    position: relative;
+
+
+
+    min-height: 180px;
+
+
+
+    display: grid;
+
+
+
+    grid-template-columns:
+
+        auto 1fr auto;
+
+
+
+    align-items: center;
+
+
+
+    gap: 25px;
+
+
+
+    padding: 30px;
+
+
+
+    background: #071f31;
+
+
+
+    color: white;
+
+
+
+    text-decoration: none;
+
+
+
+    transition: 0.35s ease;
+
+}
+
+
+
+.department-index-card:hover {
+
+    background: #0b324e;
+
+}
+
+
+
+.index-number {
+
+    align-self: flex-start;
+
+
+
+    color: #6b91a9;
+
+
+
+    font-size: 12px;
+
+
+
+    letter-spacing: 0.12em;
+
+}
+
+
+
+.index-label {
+
+    display: block;
+
+
+
+    margin-bottom: 9px;
+
+
+
+    color: #719ebc;
+
+
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+
+
+    letter-spacing: 0.15em;
+
+}
+
+
+
+.department-index-card h2 {
+
+    margin: 0;
+
+
+
+    color: white;
+
+
+
+    font-size: 28px;
+
+    font-weight: 500;
+
+}
+
+
+
+.index-arrow {
+
+    color: #7eb3d5;
+
+
+
+    font-size: 24px;
+
+
+
+    transition: 0.3s ease;
+
+}
+
+
+
+.department-index-card:hover .index-arrow {
+
+    transform: translate(4px, 4px);
+
+}
+
+
+
+
+
+/* ======================================================
+
+   MAIN DEPARTMENTS
+
+====================================================== */
+
+
+
+.department-luxury-section {
+
+    scroll-margin-top: 110px;
+
+
+
+    padding: 135px 0;
+
+
+
+    background: white;
+
+}
+
+
+
+.warehouse-luxury-section {
+
+    background: #f3f6f8;
+
+}
+
+
+
+
+
+/* ======================================================
+
+   FEATURE
+
+====================================================== */
+
+
+
+.department-feature-grid {
+
+    display: grid;
+
+
+
+    grid-template-columns:
+
+        minmax(0, 1.08fr)
+
+        minmax(0, 0.92fr);
+
+
+
+    align-items: center;
+
+
+
+    gap: 90px;
+
+}
+
+
+
+.warehouse-feature-grid {
+
+    grid-template-columns:
+
+        minmax(0, 0.92fr)
+
+        minmax(0, 1.08fr);
+
+}
+
+
+
+.department-feature-image {
+
+    position: relative;
+
+
+
+    min-height: 590px;
+
+
+
+    overflow: hidden;
+
+
+
+    background: #e8eef2;
+
+}
+
+
+
+.department-feature-image img {
+
+    width: 100%;
+
+    height: 590px;
+
+
+
+    display: block;
+
+
+
+    object-fit: cover;
+
+
+
+    transition: transform 0.7s ease;
+
+}
+
+
+
+.department-feature-image:hover img {
+
+    transform: scale(1.025);
+
+}
+
+
+
+.department-image-tag {
+
+    position: absolute;
+
+
+
+    bottom: 0;
+
+    left: 0;
+
+
+
+    min-width: 200px;
+
+
+
+    padding: 23px 25px;
+
+
+
+    background: #031522;
+
+
+
+    color: white;
+
+}
+
+
+
+html[dir="rtl"] .department-image-tag {
+
+    left: auto;
+
+    right: 0;
+
+}
+
+
+
+.department-image-tag span {
+
+    display: block;
+
+
+
+    margin-bottom: 5px;
+
+
+
+    color: #75a8c9;
+
+
+
+    font-size: 11px;
+
+
+
+    letter-spacing: 0.12em;
+
+}
+
+
+
+.department-image-tag small {
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+}
+
+
+
+.department-feature-content h2 {
+
+    margin: 0 0 28px;
+
+
+
+    color: #0e2b40;
+
+
+
+    font-size: clamp(39px, 4.5vw, 59px);
+
+
+
+    font-weight: 500;
+
+
+
+    line-height: 1.12;
+
+
+
+    letter-spacing: -0.04em;
+
+}
+
+
+
+html[dir="rtl"] .department-feature-content h2 {
+
+    letter-spacing: 0;
+
+    line-height: 1.35;
+
+}
+
+
+
+.department-feature-content > p {
+
+    color: #627787;
+
+
+
+    line-height: 1.95;
+
+}
+
+
+
+.department-lead {
+
+    color: #334e61 !important;
+
+
+
+    font-size: 18px;
+
+}
+
+
+
+
+
+/* ======================================================
+
+   CALLOUT
+
+====================================================== */
+
+
+
+.department-callout {
+
+    display: grid;
+
+
+
+    grid-template-columns:
+
+        55px 1fr;
+
+
+
+    gap: 20px;
+
+
+
+    align-items: start;
+
+
+
+    margin-top: 30px;
+
+
+
+    padding-top: 27px;
+
+
+
+    border-top: 1px solid #dbe3e8;
+
+}
+
+
+
+.department-callout > span {
+
+    width: 47px;
+
+    height: 47px;
+
+
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+
+
+    background: #08283f;
+
+
+
+    color: white;
+
+
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+
+
+    letter-spacing: 0.05em;
+
+}
+
+
+
+.department-callout p {
+
+    margin: 0;
+
+
+
+    color: #415d70;
+
+
+
+    line-height: 1.85;
+
+
+
+    font-size: 14px;
+
+}
+
+
+
+
+
+/* ======================================================
+
+   RESPONSIBILITIES
+
+====================================================== */
+
+
+
+.department-responsibilities {
+
+    margin-top: 115px;
+
+}
+
+
+
+.responsibilities-title {
+
+    display: grid;
+
+
+
+    grid-template-columns:
+
+        0.55fr 1.45fr;
+
+
+
+    align-items: end;
+
+
+
+    gap: 50px;
+
+
+
+    margin-bottom: 48px;
+
+}
+
+
+
+.responsibilities-title h3 {
+
+    margin: 0;
+
+
+
+    color: #0e2b40;
+
+
+
+    font-size: clamp(30px, 3.5vw, 45px);
+
+
+
+    font-weight: 500;
+
+
+
+    line-height: 1.2;
+
+
+
+    letter-spacing: -0.035em;
+
+}
+
+
+
+html[dir="rtl"] .responsibilities-title h3 {
+
+    letter-spacing: 0;
+
+}
+
+
+
+.luxury-responsibility-grid {
+
+    display: grid;
+
+
+
+    grid-template-columns:
+
+        repeat(3, minmax(0, 1fr));
+
+
+
+    gap: 1px;
+
+
+
+    background: #dce4e9;
+
+
+
+    border: 1px solid #dce4e9;
+
+}
+
+
+
+.luxury-responsibility-card {
+
+    position: relative;
+
+
+
+    min-height: 245px;
+
+
+
+    padding: 29px;
+
+
+
+    background: white;
+
+
+
+    transition:
+
+        background 0.3s ease,
+
+        color 0.3s ease,
+
+        transform 0.3s ease,
+
+        box-shadow 0.3s ease;
+
+}
+
+
+
+.warehouse-luxury-section
+
+.luxury-responsibility-card {
+
+    background: #fbfcfd;
+
+}
+
+
+
+.luxury-responsibility-card:hover {
+
+    z-index: 3;
+
+
+
+    background: #061d2e;
+
+
+
+    transform: translateY(-4px);
+
+
+
+    box-shadow:
+
+        0 22px 55px rgba(3, 26, 43, 0.17);
+
+}
+
+
+
+.luxury-responsibility-card > span {
+
+    display: block;
+
+
+
+    margin-bottom: 38px;
+
+
+
+    color: #7790a1;
+
+
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+
+
+    letter-spacing: 0.12em;
+
+}
+
+
+
+.luxury-responsibility-card h4 {
+
+    margin: 0 0 15px;
+
+
+
+    color: #16384f;
+
+
+
+    font-size: 19px;
+
+    font-weight: 600;
+
+
+
+    line-height: 1.4;
+
+
+
+    transition: color 0.3s ease;
+
+}
+
+
+
+.luxury-responsibility-card p {
+
+    margin: 0;
+
+
+
+    color: #6b7e8d;
+
+
+
+    font-size: 13px;
+
+
+
+    line-height: 1.85;
+
+
+
+    transition: color 0.3s ease;
+
+}
+
+
+
+.luxury-responsibility-card:hover > span {
+
+    color: #79b2d6;
+
+}
+
+
+
+.luxury-responsibility-card:hover h4 {
+
+    color: white;
+
+}
+
+
+
+.luxury-responsibility-card:hover p {
+
+    color: #b5c7d2;
+
+}
+
+
+
+
+
+/* ======================================================
+
+   COLLABORATION
+
+====================================================== */
+
+
+
+.collaboration-panel {
+
+    margin-top: 80px;
+
+
+
+    display: grid;
+
+
+
+    grid-template-columns:
+
+        1fr 1.2fr;
+
+
+
+    align-items: center;
+
+
+
+    gap: 70px;
+
+
+
+    padding: 55px;
+
+
+
+    background: #031522;
+
+
+
+    color: white;
+
+}
+
+
+
+.collaboration-panel h3 {
+
+    max-width: 500px;
+
+
+
+    margin: 0;
+
+
+
+    color: white;
+
+
+
+    font-size: clamp(29px, 3.3vw, 44px);
+
+
+
+    font-weight: 500;
+
+
+
+    line-height: 1.2;
+
+}
+
+
+
+.collaboration-list {
+
+    display: flex;
+
+
+
+    flex-wrap: wrap;
+
+
+
+    gap: 9px;
+
+}
+
+
+
+.collaboration-list span {
+
+    min-width: 100px;
+
+
+
+    padding: 12px 16px;
+
+
+
+    border:
+
+        1px solid rgba(255, 255, 255, 0.13);
+
+
+
+    color: #c2d1da;
+
+
+
+    font-size: 12px;
+
+
+
+    text-align: center;
+
+
+
+    transition: 0.25s ease;
+
+}
+
+
+
+.collaboration-list span:hover {
+
+    background: white;
+
+
+
+    border-color: white;
+
+
+
+    color: #031522;
+
+}
+
+
+
+
+
+/* ======================================================
+
+   FUTURE DEPARTMENTS
+
+====================================================== */
+
+
+
+.future-departments {
+
+    padding: 100px 0;
+
+
+
+    background: #0a4f91;
+
+
+
+    color: white;
+
+}
+
+
+
+.future-departments-grid {
+
+    display: grid;
+
+
+
+    grid-template-columns:
+
+        1fr 0.75fr;
+
+
+
+    gap: 100px;
+
+
+
+    align-items: center;
+
+}
+
+
+
+.future-departments h2 {
+
+    max-width: 720px;
+
+
+
+    margin: 0;
+
+
+
+    color: white;
+
+
+
+    font-size: clamp(38px, 5vw, 59px);
+
+
+
+    font-weight: 500;
+
+
+
+    line-height: 1.15;
+
+
+
+    letter-spacing: -0.04em;
+
+}
+
+
+
+html[dir="rtl"] .future-departments h2 {
+
+    letter-spacing: 0;
+
+}
+
+
+
+.future-departments p {
+
+    margin: 0 0 25px;
+
+
+
+    color: #d7e7f1;
+
+
+
+    line-height: 1.9;
+
+}
+
+
+
+.future-link {
+
+    display: inline-block;
+
+
+
+    padding-bottom: 6px;
+
+
+
+    border-bottom: 1px solid white;
+
+
+
+    color: white;
+
+
+
+    text-decoration: none;
+
+
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+}
+
+
+
+
+
+/* ======================================================
+
+   RTL
+
+====================================================== */
+
+
+
+html[dir="rtl"] .department-feature-content,
+
+html[dir="rtl"] .responsibilities-title,
+
+html[dir="rtl"] .future-departments-grid {
+
+    text-align: right;
+
+}
+
+
+
+
+
+/* ======================================================
+
+   TABLET
+
+====================================================== */
+
+
+
+@media (max-width: 1000px) {
+
+
+
+    .department-feature-grid,
+
+    .warehouse-feature-grid {
+
+        grid-template-columns: 1fr;
+
+
+
+        gap: 50px;
+
+    }
+
+
+
+    .warehouse-feature-grid
+
+    .department-feature-content {
+
+        order: 2;
+
+    }
+
+
+
+    .warehouse-feature-grid
+
+    .department-feature-image {
+
+        order: 1;
+
+    }
+
+
+
+    .department-feature-image,
+
+    .department-feature-image img {
+
+        height: 500px;
+
+        min-height: 500px;
+
+    }
+
+
+
+    .luxury-responsibility-grid {
+
+        grid-template-columns:
+
+            repeat(2, minmax(0, 1fr));
+
+    }
+
+
+
+    .collaboration-panel {
+
+        grid-template-columns: 1fr;
+
+
+
+        gap: 35px;
+
+    }
+
+
+
+}
+
+
+
+
+
+/* ======================================================
+
+   MOBILE / SMALL TABLET
+
+====================================================== */
+
+
+
+@media (max-width: 800px) {
+
+
+
+    .departments-hero-inner {
+
+        display: block;
+
+    }
+
+
+
+    .hero-department-count {
+
+        display: none;
+
+    }
+
+
+
+    .department-index-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+
+    .responsibilities-title {
+
+        grid-template-columns: 1fr;
+
+
+
+        gap: 12px;
+
+    }
+
+
+
+    .future-departments-grid {
+
+        grid-template-columns: 1fr;
+
+
+
+        gap: 35px;
+
+    }
+
+
+
+}
+
+
+
+
+
+/* ======================================================
+
+   MOBILE
+
+====================================================== */
+
+
+
+@media (max-width: 650px) {
+
+
+
+    .departments-luxury-hero {
+
+        min-height: 540px;
+
+    }
+
+
+
+    .departments-hero-overlay {
+
+        background:
+
+            linear-gradient(
+
+                180deg,
+
+                rgba(2, 18, 30, 0.78),
+
+                rgba(2, 18, 30, 0.97)
+
+            ) !important;
+
+    }
+
+
+
+    .departments-hero-inner {
+
+        padding-top: 65px;
+
+        padding-bottom: 65px;
+
+    }
+
+
+
+    .departments-hero-copy h1 {
+
+        font-size: 43px;
+
+    }
+
+
+
+    .departments-hero-copy p {
+
+        font-size: 14px;
+
+    }
+
+
+
+
+
+    /* Index */
+
+
+
+    .department-index {
+
+        padding-bottom: 45px;
+
+    }
+
+
+
+    .department-index-card {
+
+        min-height: 145px;
+
+
+
+        padding: 23px;
+
+    }
+
+
+
+    .department-index-card h2 {
+
+        font-size: 24px;
+
+    }
+
+
+
+
+
+    /* Sections */
+
+
+
+    .department-luxury-section {
+
+        padding: 80px 0;
+
+
+
+        scroll-margin-top: 80px;
+
+    }
+
+
+
+    .department-feature-image,
+
+    .department-feature-image img {
+
+        height: 360px;
+
+        min-height: 360px;
+
+    }
+
+
+
+    .department-image-tag {
+
+        min-width: 170px;
+
+
+
+        padding: 17px 20px;
+
+    }
+
+
+
+    .department-feature-content h2 {
+
+        font-size: 38px;
+
+    }
+
+
+
+    .department-lead {
+
+        font-size: 16px;
+
+    }
+
+
+
+
+
+    /* Responsibilities */
+
+
+
+    .department-responsibilities {
+
+        margin-top: 75px;
+
+    }
+
+
+
+    .luxury-responsibility-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+
+    .luxury-responsibility-card {
+
+        min-height: auto;
+
+
+
+        padding: 25px;
+
+    }
+
+
+
+    .luxury-responsibility-card > span {
+
+        margin-bottom: 23px;
+
+    }
+
+
+
+
+
+    /* Collaboration */
+
+
+
+    .collaboration-panel {
+
+        margin-top: 55px;
+
+
+
+        padding: 30px 24px;
+
+    }
+
+
+
+
+
+    /* Future */
+
+
+
+    .future-departments {
+
+        padding: 75px 0;
+
+    }
+
+
+
+    .future-departments h2 {
+
+        font-size: 39px;
+
+    }
+
+
+
+}
+
+/* ======================================================
+   ENGINEERING & MAINTENANCE
+====================================================== */
+
+.maintenance-luxury-section {
+    background: #ffffff;
+}
+
+
+/* ======================================================
+   MAIN VISUAL
+====================================================== */
+
+.maintenance-feature-visual {
+    position: relative;
+
+    min-height: 590px;
+
+    display: flex;
+    align-items: flex-end;
+
+    padding: 55px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            145deg,
+            #031522 0%,
+            #082c46 58%,
+            #0a528b 100%
+        );
+
+    color: #ffffff;
+}
+
+.maintenance-feature-visual::before {
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    top: -190px;
+    right: -140px;
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+.maintenance-feature-visual::after {
+    content: "";
+
+    position: absolute;
+
+    width: 260px;
+    height: 260px;
+
+    top: -110px;
+    right: -60px;
+
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+.maintenance-big-number {
+    position: absolute;
+
+    top: 45px;
+    left: 50px;
+
+    color: rgba(255, 255, 255, 0.08);
+
+    font-size: 150px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+html[dir="rtl"] .maintenance-big-number {
+    left: auto;
+    right: 50px;
+}
+
+.maintenance-visual-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 520px;
+}
+
+.maintenance-visual-content > span {
+    display: block;
+
+    margin-bottom: 16px;
+
+    color: #80b6d7;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+}
+
+html[dir="rtl"] .maintenance-visual-content > span {
+    letter-spacing: 0;
+}
+
+.maintenance-visual-content h3 {
+    margin: 0 0 32px;
+
+    color: #ffffff;
+
+    font-size: clamp(34px, 4vw, 52px);
+    font-weight: 500;
+    line-height: 1.15;
+}
+
+html[dir="rtl"] .maintenance-visual-content h3 {
+    line-height: 1.35;
+}
+
+.maintenance-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.maintenance-tags span {
+    padding: 10px 13px;
+
+    border: 1px solid rgba(255, 255, 255, 0.16);
+
+    color: #c9dbe6;
+
+    font-size: 11px;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.maintenance-tags span:hover {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: #031522;
+}
+
+
+/* ======================================================
+   MAINTENANCE APPROACH
+====================================================== */
+
+.maintenance-approach {
+    margin-top: 80px;
+
+    padding: 48px 55px;
+
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+
+    align-items: center;
+    gap: 70px;
+
+    background: #031522;
+
+    color: #ffffff;
+}
+
+.maintenance-approach h3 {
+    margin: 10px 0 0;
+
+    color: #ffffff;
+
+    font-size: clamp(29px, 3.3vw, 43px);
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+html[dir="rtl"] .maintenance-approach h3 {
+    line-height: 1.35;
+}
+
+.maintenance-approach p {
+    margin: 0;
+
+    color: #b9cad5;
+
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+
+/* ======================================================
+   MAINTENANCE RTL
+====================================================== */
+
+html[dir="rtl"] .maintenance-feature-visual,
+html[dir="rtl"] .maintenance-approach {
+    text-align: right;
+}
+
+
+/* ======================================================
+   INDEX + MAINTENANCE RESPONSIVE
+====================================================== */
+
+@media (max-width: 1000px) {
+
+    .department-index-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .maintenance-approach {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .department-index-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .maintenance-feature-visual {
+        min-height: 430px;
+        padding: 35px 25px;
+    }
+
+    .maintenance-big-number {
+        top: 30px;
+        left: 25px;
+        font-size: 100px;
+    }
+
+    html[dir="rtl"] .maintenance-big-number {
+        left: auto;
+        right: 25px;
+    }
+
+    .maintenance-visual-content h3 {
+        font-size: 34px;
+    }
+
+    .maintenance-approach {
+        margin-top: 55px;
+        padding: 30px 25px;
+    }
+
+    .maintenance-approach h3 {
+        font-size: 30px;
+    }
+
+}
